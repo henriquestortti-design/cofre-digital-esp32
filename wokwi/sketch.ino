@@ -8,7 +8,7 @@
 #include <Keypad.h>
 #include <ESP32Servo.h>
 
-// ---------- pinos (Figura 6 da A1) ----------
+// ---------- pinos ----------
 byte pinosLinhas[4]  = {13, 14, 27, 26};   // R1..R4 (lidas)
 byte pinosColunas[4] = {25, 33, 32, 23};   // C1..C4 (ativadas uma por vez)
 const int PINO_DS   = 16;                  // 74HC595 - dado
@@ -29,7 +29,7 @@ char teclas[4][4] = {
 Keypad teclado = Keypad(makeKeymap(teclas), pinosLinhas, pinosColunas, 4, 4);
 Servo trava;
 
-// ---------- estados (codigo Q2 Q1 Q0 da Tabela 6) ----------
+// ---------- estados (codigo Q2 Q1 Q0 da Tabela 5 da A1) ----------
 enum Estado : uint8_t {
   E_OCIOSO    = 0b000,
   E_D1        = 0b001,
@@ -74,7 +74,7 @@ void mudarEstado(Estado novo) {
                 (novo >> 2) & 1, (novo >> 1) & 1, novo & 1, tentativas);
 }
 
-// Decodificador do display: mostra 3 - T (Secao 7.3 da A1)
+// Decodificador do display: mostra 3 - T (Tabela 4 da A1)
 void mostrarDisplay(uint8_t t) {
   bool T1 = t & 0b10;
   bool T0 = t & 0b01;
@@ -121,7 +121,7 @@ void cancelar() {
   mudarEstado(E_OCIOSO);
 }
 
-// Saidas de Moore: dependem so do estado (Secao 7.4 da A1)
+// Saidas de Moore: dependem so do estado (Secao 7.3 da A1)
 void atualizarSaidas(unsigned long agora) {
   bool q2 = estado & 0b100;
   bool q1 = estado & 0b010;
