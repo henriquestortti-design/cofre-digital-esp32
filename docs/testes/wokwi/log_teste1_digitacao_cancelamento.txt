@@ -1,0 +1,23 @@
+Serial Monitor do Wokwi - Teste 1 (digitacao e cancelamento) - executado em 09/10/2026
+
+Cofre digital pronto. Senha de teste: 2580
+
+-> OCIOSO (000)  T = 0
+Tecla: 7
+-> D1 (001)  T = 0
+Tecla: 4
+-> D2 (010)  T = 0
+Tecla: 5
+-> D3 (011)  T = 0
+Tecla: 8
+-> D4 (100)  T = 0
+Tecla: A
+Tecla: C
+Tecla: D
+Tecla: 2
+Tecla: 5
+Tecla: 8
+Tecla: 0
+Tecla: *
+-> OCIOSO (000)  T = 0
+Tecla: *

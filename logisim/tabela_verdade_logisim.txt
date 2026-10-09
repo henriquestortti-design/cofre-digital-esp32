@@ -1,0 +1,20 @@
+Tabela-verdade gerada pelo Logisim Evolution 3.8.0 (java -jar logisim-evolution-3.8.0-all.jar -tty table cofre_decisao.circ)
+Data: 09/10/2026. Linhas com T1T0 = 11 correspondem as condicoes irrelevantes (X) da Tabela 3 da A1.
+
+C S T1 T0 ABRIR ERRAR BLOQUEAR
+0 0  0  0     0     0        0
+0 0  0  1     0     0        0
+0 0  1  0     0     0        0
+0 0  1  1     0     0        0
+0 1  0  0     0     0        0
+0 1  0  1     0     0        0
+0 1  1  0     0     0        0
+0 1  1  1     0     0        0
+1 0  0  0     0     1        0
+1 0  0  1     0     1        0
+1 0  1  0     0     0        1
+1 0  1  1     0     0        1
+1 1  0  0     1     0        0
+1 1  0  1     1     0        0
+1 1  1  0     1     0        0
+1 1  1  1     1     0        0
