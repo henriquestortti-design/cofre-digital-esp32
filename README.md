@@ -50,6 +50,10 @@ Cofre digital simulado no [Wokwi](https://wokwi.com) com um **ESP32**. O cofre s
 
 ## Como rodar
 
+**Projeto pronto no Wokwi:** https://wokwi.com/projects/477450539069681665 (basta abrir e clicar em ▶).
+
+Para montar do zero:
+
 1. Abra um projeto ESP32 novo no Wokwi: https://wokwi.com/projects/new/esp32
 2. Substitua o conteúdo de `sketch.ino` e `diagram.json` pelos arquivos da pasta [`wokwi/`](wokwi).
 3. No *Library Manager*, adicione as bibliotecas **Keypad** e **ESP32Servo** (ou crie o arquivo `libraries.txt`).
