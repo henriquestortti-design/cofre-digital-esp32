@@ -1,8 +1,8 @@
 // Cofre Digital - Projeto Integrador (A1/A3) - Sistemas Digitais - UniRitter
 // Arthur Schwambach e Henrique Braga Stortti de Souza
 //
-// Maquina de estados de Moore com 8 estados (Q2 Q1 Q0), logica de decisao e
-// saidas implementadas com as expressoes obtidas por Karnaugh na A1.
+// Maquina de estados de Moore com 8 estados (Q2 Q1 Q0) e logica de decisao
+// implementada com as expressoes obtidas por Karnaugh na A1.
 // Senha de teste: 2580
 
 #include <Keypad.h>
@@ -121,7 +121,7 @@ void cancelar() {
   mudarEstado(E_OCIOSO);
 }
 
-// Saidas de Moore: dependem so do estado (Secao 7.3 da A1)
+// Saidas de Moore: dependem so do estado (Secao 9 da A1)
 void atualizarSaidas(unsigned long agora) {
   bool q2 = estado & 0b100;
   bool q1 = estado & 0b010;
